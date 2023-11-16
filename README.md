@@ -13,13 +13,18 @@ HelloOpenGL has a single dependency, [cmake](http://www.cmake.org/download/), wh
 - [python3](https://www.python.org/downloads/)
 - [Jinja2 module](https://pypi.org/project/Jinja2/)
 
-For exmple, Ubuntu has python3 installed so you only need to add the Jinja2 module using pip:
+For exmple, Ubuntu has python3 installed so you only need to add the Jinja2 module using pip package manager:
 ```bash
+# If Python3 isn't preinstalled, uncomment the following line
+# sudo apt install python3
 pip install -U Jinja2
 ```
 
 ### GLFW submodule peer dependencies
-- They are defined in [GLFW compile instructions](https://www.glfw.org/docs/3.3/compile.html). 
+They are defined in [GLFW compile instructions](https://www.glfw.org/docs/3.3/compile.html). For example, on Ubuntu you will need the following debian package to create a X11 window:
+```bash
+sudo apt install xorg-dev
+```
 
 Start by cloning this repository, making sure to pass the `--recursive` flag to grab all the dependencies. If you forgot, then you can `git submodule update --init` instead.
 
