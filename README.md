@@ -7,7 +7,21 @@ HelloOpenGL is a template project with all the boilerplate code, with the same p
 - Has github actions to test de Cmake files against different platforms
 
 ## Getting Started
-HelloOpenGL has also a single dependency: [cmake](http://www.cmake.org/download/), which is used to generate platform-specific makefiles or project files. Start by cloning this repository, making sure to pass the `--recursive` flag to grab all the dependencies. If you forgot, then you can `git submodule update --init` instead.
+HelloOpenGL has a single dependency, [cmake](http://www.cmake.org/download/), which is used to generate platform-specific makefiles or project files. Nevertheless, you will also need to install the peer dependencies to compile the GLAD and GLFW submodules. 
+
+### GLAD submodule peer dependencies
+- [python3](https://www.python.org/downloads/)
+- [Jinja2 module](https://pypi.org/project/Jinja2/)
+
+For exmple, Ubuntu has python3 installed so you only need to add the Jinja2 module using pip:
+```bash
+pip install -U Jinja2
+```
+
+### GLFW submodule peer dependencies
+- They are defined in [GLFW compile instructions](https://www.glfw.org/docs/3.3/compile.html). 
+
+Start by cloning this repository, making sure to pass the `--recursive` flag to grab all the dependencies. If you forgot, then you can `git submodule update --init` instead.
 
 ```bash
 git clone --recursive https://github.com/anthian/HelloOpenGL
