@@ -53,13 +53,14 @@ target_link_libraries(${PROJECT_NAME} ${DL_LIBRARIES})
 if(MSVC)
     string(REPLACE " /W4" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 else()
-    string(REPLACE " -Wextra -Wpedantic" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+    string(REPLACE " -Wall -Wextra -Wpedantic" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 endif()
 
 include(glad)
 include(glfw)
 include(glm)
 include(assimp)
+include(bullet)
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
