@@ -10,3 +10,15 @@
 	path = external/glad
 	url = https://github.com/Dav1dde/glad.git
 	branch = glad2
+[submodule "external/assimp"]
+	path = external/assimp
+	url = https://github.com/assimp/assimp.git
+	branch = master
+[submodule "external/stb"]
+	path = external/stb
+	url = https://github.com/nothings/stb.git
+	branch = master
+[submodule "external/bullet"]
+	path = external/bullet
+	url = https://github.com/bulletphysics/bullet3.git
+	branch = master

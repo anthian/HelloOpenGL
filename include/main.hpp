@@ -8,9 +8,9 @@
 #define OPENGL_MINOR_VERSION 6
 
 // System Headers
-//#include <assimp/Importer.hpp>
-//#include <assimp/postprocess.h>
-//#include <assimp/scene.h>
+#include <assimp/Importer.hpp>
+#include <assimp/postprocess.h>
+#include <assimp/scene.h>
 //#include <btBulletDynamicsCommon.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>

@@ -1,0 +1,7 @@
+set(ASSIMP_DIR "${EXTERNAL_DIR}/assimp")
+option(ASSIMP_BUILD_ASSIMP_TOOLS OFF)
+option(ASSIMP_BUILD_SAMPLES OFF)
+option(ASSIMP_BUILD_TESTS OFF)
+add_subdirectory("${ASSIMP_DIR}")
+target_link_libraries(${PROJECT_NAME} assimp)
+target_include_directories(${PROJECT_NAME} PRIVATE "${ASSIMP_DIR}/include")

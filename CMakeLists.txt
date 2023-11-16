@@ -13,7 +13,7 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4")
     set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT "${PROJECT_NAME}")
 else()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -std=c++11")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -std=c++17")
     if(NOT WIN32)
         set(DL_LIBRARIES dl)
     endif()
@@ -49,9 +49,17 @@ ${PROJECT_SHADERS} ${PROJECT_CONFIGS})
 
 target_link_libraries(${PROJECT_NAME} ${DL_LIBRARIES})
 
+# Remove warning flags on CMAKE_CXX_FLAGS to avoid compilation errors of external submodules
+if(MSVC)
+    string(REPLACE " /W4" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+else()
+    string(REPLACE " -Wextra -Wpedantic" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+endif()
+
 include(glad)
 include(glfw)
 include(glm)
+include(assimp)
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
