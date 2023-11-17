@@ -13,7 +13,7 @@
 # HelloOpenGL
 
 ## Summary
-HelloOpenGL is a template project with all the boilerplate code, with the same pourpose of [Glitter](http://polytonic.github.io/Glitter/) project on which it is based, to be a starting point for the tutorials on [learnopengl.com](http://www.learnopengl.com) and [open.gl](https://open.gl). HelloOpenGL also compiles and statically links every required library, so you can jump right into doing what you probably want: how to get started with OpenGL, but has some minor differences with Glitter project. 
+HelloOpenGL is a template project with the same pourpose of [Glitter](http://polytonic.github.io/Glitter/) project on which it is based, to be a starting point for the tutorials on [learnopengl.com](http://www.learnopengl.com) and [open.gl](https://open.gl). HelloOpenGL also compiles and statically links every required library, so you can jump right into doing what you probably want: how to get started with OpenGL, but has some minor differences with Glitter project. 
 - Uses glad2 generator despite of the older generated files of the C branch
 - The folder structure follow the [Pitchfork layout conventions](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs)
 - Has github actions to test de Cmake files against different platforms
