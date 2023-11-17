@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.12)
 
 project(HelloOpenGL LANGUAGES C CXX VERSION 0.0.1)
 
@@ -26,12 +26,13 @@ set(EXTERNAL_DIR "${CMAKE_CURRENT_SOURCE_DIR}/external")
 
 include_directories(include/)
 
-file(GLOB_RECURSE PROJECT_INCLUDE include/*.hpp)
+file(GLOB_RECURSE PROJECT_INCLUDE include/*.hpp
+                                  include/*.h)
 file(GLOB_RECURSE PROJECT_SRC src/*.cpp)
 file(GLOB_RECURSE PROJECT_SHADERS data/shaders/*.comp
-                          data/shaders/*.frag
-                          data/shaders/*.geom
-                          data/shaders/*.vert)
+                                  data/shaders/*.frag
+                                  data/shaders/*.geom
+                                  data/shaders/*.vert)
 file(GLOB PROJECT_CONFIGS CMakeLists.txt
                           Readme.md
                           LICENSE
@@ -61,6 +62,7 @@ include(glfw)
 include(glm)
 include(assimp)
 include(bullet)
+include(stb)
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
