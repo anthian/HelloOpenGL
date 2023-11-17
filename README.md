@@ -1,3 +1,15 @@
+[![CMake on multiple platforms](https://github.com/anthian/HelloOpenGL/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/anthian/HelloOpenGL/actions/workflows/cmake-multi-platform.yml)
+
+[![GitHub license](https://img.shields.io/github/license/anthian/HelloOpenGL.svg)](https://github.com/anthian/HelloOpenGL/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/anthian/HelloOpenGL.svg?style=social&label=Watch)](https://GitHub.com/anthian/HelloOpenGL/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/anthian/HelloOpenGL.svg?style=social&label=Fork)](https://GitHub.com/anthian/HelloOpenGL/network/)
+[![GitHub stars](https://img.shields.io/github/stars/anthian/HelloOpenGL.svg?style=social&label=Star)](https://GitHub.com/anthian/HelloOpenGL/stargazers/)
+
 # HelloOpenGL
 
 ## Summary
