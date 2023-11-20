@@ -1,7 +1,19 @@
+[![CMake on multiple platforms](https://github.com/anthian/HelloOpenGL/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/anthian/HelloOpenGL/actions/workflows/cmake-multi-platform.yml)
+
+[![GitHub license](https://img.shields.io/github/license/anthian/HelloOpenGL.svg)](https://github.com/anthian/HelloOpenGL/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/anthian/HelloOpenGL.svg)](https://GitHub.com/anthian/HelloOpenGL/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/anthian/HelloOpenGL.svg?style=social&label=Watch)](https://GitHub.com/anthian/HelloOpenGL/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/anthian/HelloOpenGL.svg?style=social&label=Fork)](https://GitHub.com/anthian/HelloOpenGL/network/)
+[![GitHub stars](https://img.shields.io/github/stars/anthian/HelloOpenGL.svg?style=social&label=Star)](https://GitHub.com/anthian/HelloOpenGL/stargazers/)
+
 # HelloOpenGL
 
 ## Summary
-HelloOpenGL is a template project with all the boilerplate code, with the same pourpose of [Glitter](http://polytonic.github.io/Glitter/) project on which it is based, to be a starting point for the tutorials on [learnopengl.com](http://www.learnopengl.com) and [open.gl](https://open.gl). HelloOpenGL also compiles and statically links every required library, so you can jump right into doing what you probably want: how to get started with OpenGL, but has some minor differences with Glitter project. 
+HelloOpenGL is a template project with the same pourpose of [Glitter](http://polytonic.github.io/Glitter/) project on which it is based, to be a starting point for the tutorials on [learnopengl.com](http://www.learnopengl.com) and [open.gl](https://open.gl). HelloOpenGL also compiles and statically links every required library, so you can jump right into doing what you probably want: how to get started with OpenGL, but has some minor differences with Glitter project. 
 - Uses glad2 generator despite of the older generated files of the C branch
 - The folder structure follow the [Pitchfork layout conventions](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs)
 - Has github actions to test de Cmake files against different platforms
