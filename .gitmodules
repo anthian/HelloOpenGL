@@ -22,3 +22,7 @@
 	path = external/bullet
 	url = https://github.com/bulletphysics/bullet3.git
 	branch = master
+[submodule "external/freetype"]
+	path = external/freetype
+	url = https://github.com/freetype/freetype.git
+	branch = master
