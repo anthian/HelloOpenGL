@@ -20,6 +20,7 @@ include(assimp)
 include(bullet)
 include(stb)
 include(freetype)
+include(openal)
 
 set(DL_LIBRARIES )
 if(MSVC)
@@ -64,17 +65,18 @@ source_group("shaders" FILES ${PROJECT_SHADERS})
 source_group("src" FILES ${PROJECT_SRC})
 source_group("externals" FILES ${EXTERNAL_DIR})
 
-add_executable(${PROJECT_NAME} ${PROJECT_SRC} ${PROJECT_INCLUDE}
-${PROJECT_SHADERS} ${PROJECT_CONFIGS})
+add_executable(${PROJECT_NAME} ${PROJECT_SRC} ${PROJECT_INCLUDE} ${PROJECT_SHADERS} ${PROJECT_CONFIGS})
 
-target_include_directories(${PROJECT_NAME} PRIVATE "${ASSIMP_DIR}/include"
-                                                   "${BULLET_DIR}/src"
-                                                   "${GLAD_DIR}"
-                                                   "${GLFW_DIR}/include"
-                                                   "${GLM_DIR}"
-                                                   "${STB_DIR}")
+target_include_directories(${PROJECT_NAME} PRIVATE "${ASSIMP_DIR}/include/"
+                                                   "${BULLET_DIR}/src/"
+                                                   "${GLAD_DIR}/"
+                                                   "${GLFW_DIR}/include/"
+                                                   "${GLM_DIR}/"
+                                                   "${STB_DIR}/"
+                                                   "${FREETYPE_DIR}/include/"
+                                                   "${OPENAL_DIR}/include/")
 
-target_link_libraries(${PROJECT_NAME} assimp BulletDynamics BulletCollision LinearMath freetype glad glfw ${DL_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} assimp BulletDynamics BulletCollision LinearMath freetype openal glad glfw ${DL_LIBRARIES})
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD

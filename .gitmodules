@@ -26,3 +26,7 @@
 	path = external/freetype
 	url = https://github.com/freetype/freetype.git
 	branch = master
+[submodule "external/openal"]
+	path = external/openal
+	url = https://github.com/kcat/openal-soft.git
+	branch = master

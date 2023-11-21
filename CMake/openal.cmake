@@ -1,0 +1,7 @@
+set(OPENAL_DIR "${EXTERNAL_DIR}/openal")
+set(LIBTYPE STATIC)
+option(ALSOFT_UTILS OFF)
+option(ALSOFT_EXAMPLES OFF)
+option(ALSOFT_TESTS OFF)
+add_subdirectory("${OPENAL_DIR}")
+unset(LIBTYPE)
