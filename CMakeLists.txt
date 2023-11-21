@@ -76,7 +76,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE "${ASSIMP_DIR}/include/"
                                                    "${FREETYPE_DIR}/include/"
                                                    "${OPENAL_DIR}/include/")
 
-target_link_libraries(${PROJECT_NAME} assimp BulletDynamics BulletCollision LinearMath freetype openal glad glfw ${DL_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} assimp BulletDynamics BulletCollision LinearMath freetype OpenAL glad glfw ${DL_LIBRARIES})
 
 add_custom_command(
     TARGET ${PROJECT_NAME} POST_BUILD
